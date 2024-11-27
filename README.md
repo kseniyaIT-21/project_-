@@ -8,3 +8,5 @@
 ---
 # Реализация проекта:
 - 23.10 - Создана структура главной страницы сайта, описание требований к сайту, определены функции и возможности сайта.
+# Макет
+- https://www.figma.com/design/0uT2WFLKbLCNjPeSnD9iTf/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82-%D0%BA%D0%BD%D0%B8%D0%B6%D0%BD%D1%8B%D0%B9-%D0%BC%D0%B0%D0%B3%D0%B0%D0%B8%D0%BD-(Community)-(Copy)?node-id=0-1&node-type=canvas&t=d77EisK2bajRFFGJ-0
