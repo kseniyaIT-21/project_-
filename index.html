@@ -3,64 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Музей мифов древней греции</title>
+    <title>Музей мифов древней греции</title> 
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-
-</body>
- <header> 
-    <a>Музей мифов древней греции</a>
-    <nav>
-        <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Выставки</a></li>
-            <li><a href="#">Билеты</a></li>
-            <li><a href="#">Адрес</a></li>
+<!-- Заголовок -->
+<body>
+ <header class="header container"> 
+    <a class="header__link"><h1 class="header__title">Музей мифов древней греции</h1></a>
+    <nav class="header__menu">
+        <ul class="header__list">
+            <li class="header__item"><a class="header__item-link" href="#">Главная</a></li>
+            <li class="header__item"><a class="header__item-link" href="#">Выставки</a></li>
+            <li class="header__item"><a class="header__item-link" href="#">Билеты</a></li>
+            <li class="header__item"><a class="header__item-link" href="#">Адрес</a></li>
         </ul>
     </nav>
-    <span> ул.Пушкина-30</span>
-   <!--/ Навигация -->  
-   <button type="button">Войти
-        <img src="images/icon/image.png" alt="Войти" width="16" height="16">
-    <button type="button">Регистрация</button>
+    <span class="header__address"> ул.Пушкина-30</span>
+   <!--/ Навигация --> 
+   <div class="header__button">
+       <button  class="header__login" type="button">
+           <img class="header__login-icon" src="images/icon/image.png" alt="Войти" width="16" height="16"> 
+           <span class="header__login-text">Войти</span> 
+        </button>
+        <button class="header__login" type="button">
+            <img class="header__login-icon" src="images/icon/image.png" alt="Регистрация" width="16" height="16"> 
+            <span class="header__login">Регистрация</span> 
+        </button>
+    </div> 
  </header>
- 
-  </button>
-</html>
-</header>
+<!-- Логотип -->
+<!--/ Логотип -->
 <!--/ Заголовок -->
+<section class="header__about">
+    <div class="about__wrap-right">
+        <h2 class="about__title">О проекте</h2>
+        <p>Веб-ресурс предлагает потенциальным клиентам наглядный обзор на мифы древней Греции. Наша цель - помочь людям узнать культуру Древней Греции через их мифы и сказания.</p>
+    </div>
+    <div class="about__wrap-left">   
+        <img class="header__about" src ="images/image2.png" alt="Пантеон богов" width="400" height="300">
+    </div>
+</section>
 <!-- Основной контент -->
-<main>
+<main class="container">
     <!-- Первый экран -->
-    <section>
-        <img src="images/image2.png" alt="Пантеон богов" width="500" height="400">
-        <div>
-            <h2>Выставки</h2>
-            <a href="#" target="_blank">Поиск экскурсий и выставок</a>
+    <section class="section promo">
+        <div class="promo__content">
+            <h2 class="promo__title section__title">Выставки</h2>
+            <a class="promo__description" href="#" target="_blank">Поиск экскурсий и выставок</a>
         </div>
-        <ul>
+        <ul class="card__list">
+            <li class="card__item">
+                <h3 class="card__title">12 подвигов Геракла</h3>
+                <p class="card__description"> Мы предлагаем вам погрузиться в героические подвиги знаменитого Геракла. Своими глазами вы можете увидеть 12 легендарных побед, котороые прославили его на долгое время.</p>
+                <img class="card__icon" src="images/image-1.png" alt="12 подвигов Геракла" width="400" height="200">
+            </li>
             <li>
-                <h3>12 подвигов Геракла</h3>
-                <p> Мы предлагаем вам погрузиться в героические подвиги знаменитого Геракла. Своими глазами вы можете увидеть 12 легендарных побед, котороые прославили его на долгое время.</p>
-                <img src="images/image-1.png" alt="12 подвигов Геракла"width="400" height="200">
-             </li>
+                 <h3 class="card__title">Персей</h3>
+                <p class="card__description">Благодаря этой выставке вы можете лично наблюдать смерть великой Медузы горогоны и возвышение героя-полубога Персея</p>
+                <img class="card__icon" src="images/image-3.png" alt="Персей" width="400" height="200">
+            </li> 
             <li>
-            <h3>Персей</h3>
-            <p>Благодаря этой выставке вы можете лично наблюдать смерть великой Медузы горогоны и возвышение героя-полубога Персея</p>
-            <img src="images/image-3.png" alt="Персей" width="400" height="200">
-         </li>
-        <li>
-            <h3> Миф о Тесее и Минотавре</h3>
-            <p>Попробуйте самостоятельно пройти пугающий лабиринт Кносского дворца и одолейте Минотавра как это сделал герой мифа этого Тесей</p>
-            <img src="images/image-4.png" alt="Миф о Тесее и Минотавре" width="400" height="200">
-        </li>
-        </section>
-        <!--/ Первый экран -->
-        <footer>
-            <p>Сайт создан Осмирко Ксенией,Микаковой Дианой,Россохиной Валерией группа ИТ-21</p>
-            <img src="images/card.png" alt="Карта с адресом" width="400" height="200">
+                <h3 class="card__title"> Миф о Тесее и Минотавре</h3>
+                <p class="card__description">Попробуйте самостоятельно пройти пугающий лабиринт Кносского дворца и одолейте Минотавра как это сделал герой мифа этого Тесей</p>
+                <img class="card__icon" src="images/image-4.png" alt="Миф о Тесее и Минотавре" width="400" height="200">
+            </li> 
+        </ul>
+    </section>
+    <!--/ Первый экран -->
+</main>
+        <footer class="footer container">
+            <p class="footer__copy">Сайт создан Осмирко Ксенией,Микаковой Дианой,Россохиной Валерией группа ИТ-21</p>
+            <img class="card__icon" src="images/card.png" alt="Карта с адресом" width="400" height="200">
             <ul>
-                <li><a href="#">Контакты:</a></li>
-                <li><a href="#">Номер телефона +7987654321</a></li>
-                <li><a href="#">Соц.сети- вк,тг</a></li>
+                <li class="menu__item"><a class="header__item-link" href="#">Контакты:</a></li>
+                <li class="menu__item"><a class="header__item-link" href="#">Номер телефона +7987654321</a></li>
+                <li class="menu__item"><a class="header__item-link" href="#">Соц.сети- вк,тг</a></li>
             </ul>
-        </footer>    
+        </footer> 
+        <section class="section popup">
+            <form action="/">
+                <h3 class="popup__title">Вход в личный кабинет</h3>
+                <input class="form__field" type="tel" name="phone" placeholder="Номер телефона" required>
+                <input class="form__field" type="password" name="password" placeholder ="Пароль" required>
+                <button class="button">Войти</button>
+            </form>
+        </section>  
+</html>

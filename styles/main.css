@@ -1,0 +1,9 @@
+.about{
+    display: flex;
+    gap: 10px;
+   }
+   .about__wrap-right{
+    width: 500px;
+    flex-shrink: 0;
+   }
+   

@@ -1,0 +1,51 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Roboto', 'Times New Roman','Times','serif';
+    font-size: 20px;
+    line-height: 28px;
+    color: rgb(3, 2, 2);
+
+    overflow-x: hidden;
+   }
+
+   img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Контейнер-обертка */
+.container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Кнопки */
+
+.button {
+    font-size: 16px;
+    font-weight: 600;
+
+    background-color: rgb(160, 135, 104);
+    color: #fff;
+
+    border: 1px solid rgb(161, 139, 111);
+    border-radius: 8px;
+    padding: 12px 18px;
+
+    cursor: pointer;
+}
+ .course__button--disable {
+    color: rgb(161, 138, 109);
+    background-color: rgb(252, 251, 251);
+    border-color: rgb(165, 148, 128);
+    border: 1px solid rgb(182, 167, 149);
+
+ }
+   
