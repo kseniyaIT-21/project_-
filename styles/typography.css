@@ -1,15 +1,22 @@
 .button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 16px;
     font-weight: 600;
 
     background-color: rgb(128, 0, 128);
     color: rgb(255, 255, 255);
-
-    border: 1px solid rgb(128, 1, 128);
+    border: none;
     border-radius: 8px;
-    padding: 12px 18px;
+    padding: 15px 20px;
 
     cursor: pointer;
+}
+
+
+.button:hover{
+    opacity: 0.5;
 }
  .course__button--disable {
     color: rgb(250, 249, 250);

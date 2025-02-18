@@ -1,92 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Музей мифов древней греции</title> 
+    <title>Музей мифов древней греции</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <!-- Заголовок -->
+
 <body>
- <header class="header container"> 
-    <a class="header__link"><h1 class="header__title">Музей мифов древней греции</h1></a>
-    <nav class="header__menu">
-        <ul class="header__list">
-            <li class="header__item"><a class="header__item-link" href="#">Главная</a></li>
-            <li class="header__item"><a class="header__item-link" href="#">Выставки</a></li>
-            <li class="header__item"><a class="header__item-link" href="#">Билеты</a></li>
-            <li class="header__item"><a class="header__item-link" href="#">Адрес</a></li>
-        </ul>
-    </nav>
-    <span class="header__address"> ул.Пушкина-30</span>
-   <!--/ Навигация --> 
-   <div class="header__button">
-       <button  class="header__login" type="button">
-           <img class="header__login-icon" src="images/icon/image.png" alt="Войти" width="16" height="16"> 
-           <span class="header__login-text">Войти</span> 
-        </button>
-        <button class="header__login" type="button">
-            <img class="header__login-icon" src="images/icon/image.png" alt="Регистрация" width="16" height="16"> 
-            <span class="header__login">Регистрация</span> 
-        </button>
-    </div> 
- </header>
-<!-- Логотип -->
-<!--/ Логотип -->
-<!--/ Заголовок -->
-<section class="header__about">
-    <div class="about__wrap-right">
-        <h2 class="about__title">О проекте</h2>
-        <p>Веб-ресурс предлагает потенциальным клиентам наглядный обзор на мифы древней Греции. Наша цель - помочь людям узнать культуру Древней Греции через их мифы и сказания.</p>
-    </div>
-    <div class="about__wrap-left">   
-        <img class="header__about" src ="images/image2.png" alt="Пантеон богов" width="400" height="300">
-    </div>
-</section>
-<!-- Основной контент -->
-<main class="container">
-    <!-- Первый экран -->
-    <section class="section promo">
-        <div class="promo__content">
-            <h2 class="promo__title section__title">Выставки</h2>
-            <a class="promo__description" href="#" target="_blank">Поиск экскурсий и выставок</a>
-        </div>
-        <ul class="card__list">
-            <li class="card__item">
-                <h3 class="card__title">12 подвигов Геракла</h3>
-                <p class="card__description"> Мы предлагаем вам погрузиться в героические подвиги знаменитого Геракла. Своими глазами вы можете увидеть 12 легендарных побед, котороые прославили его на долгое время.</p>
-                <img class="card__icon" src="images/image-1.png" alt="12 подвигов Геракла" width="400" height="200">
-            </li>
-            <li>
-                 <h3 class="card__title">Персей</h3>
-                <p class="card__description">Благодаря этой выставке вы можете лично наблюдать смерть великой Медузы горогоны и возвышение героя-полубога Персея</p>
-                <img class="card__icon" src="images/image-3.png" alt="Персей" width="400" height="200">
-            </li> 
-            <li>
-                <h3 class="card__title"> Миф о Тесее и Минотавре</h3>
-                <p class="card__description">Попробуйте самостоятельно пройти пугающий лабиринт Кносского дворца и одолейте Минотавра как это сделал герой мифа этого Тесей</p>
-                <img class="card__icon" src="images/image-4.png" alt="Миф о Тесее и Минотавре" width="400" height="200">
-            </li> 
-        </ul>
-    </section>
-    <!--/ Первый экран -->
-</main>
-        <footer class="footer container">
-            <p class="footer__copy">Сайт создан Осмирко Ксенией,Микаковой Дианой,Россохиной Валерией группа ИТ-21</p>
-            <img class="card__icon" src="images/card.png" alt="Карта с адресом" width="400" height="200">
-            <ul>
-                <li class="menu__item"><a class="header__item-link" href="#">Контакты:</a></li>
-                <li class="menu__item"><a class="header__item-link" href="#">Номер телефона +7987654321</a></li>
-                <li class="menu__item"><a class="header__item-link" href="#">Соц.сети- вк,тг</a></li>
+    <header class="header container">
+        <a class="header__link">
+            <h1 class="header__title">Музей мифов древней греции</h1>
+        </a>
+        <nav class="header__menu">
+            <ul class="header__list">
+                <li class="header__item"><a class="header__item-link" href="#">Главная</a></li>
+                <li class="header__item"><a class="header__item-link" href="#">Выставки</a></li>
+                <li class="header__item"><a class="header__item-link" href="#">Билеты</a></li>
+                <li class="header__item"><a class="header__item-link" href="#">Адрес</a></li>
             </ul>
-        </footer> 
-        <section class="section popup">
-            <form action="/">
-                <h3 class="popup__title">Вход в личный кабинет</h3>
-                <input class="form__field" type="tel" name="phone" placeholder="Номер телефона" required>
-                <input class="form__field" type="password" name="password" placeholder ="Пароль" required>
-                <button class="button">Войти</button>
-            </form>
-        </section>  
+        </nav>
+        <span class="header__address"> ул.Пушкина-30</span>
+        <!--/ Навигация -->
+        <div class="header__button ">
+            <button class="button" type="button">
+                <img class="header__button-icon" src="images/icon/image.png" alt="Войти" width="16" height="16">
+                <span class="header__button-text">Войти</span>
+            </button>
+            <button class="header__login button" type="button">
+                <img class="header__button-icon" src="images/icon/image.png" alt="Регистрация" width="16" height="16">
+                <span class="header__button-text">Регистрация</span>
+            </button>
+        </div>
+    </header>
+    <!--/ Заголовок -->
+
+    <!-- Основной контент -->
+    <main class="container">
+        <!-- Первый экран -->
+        <section class="section about">
+            <div class="about__wrap-right">
+                <h2 class="about__title">О проекте</h2>
+                <p class="about__text">Веб-ресурс предлагает потенциальным клиентам наглядный обзор на мифы древней
+                    Греции. Наша цель -
+                    помочь людям узнать культуру Древней Греции через их мифы и сказания.</p>
+            </div>
+            <div class="about__wrap-left">
+                <img class="about__image" src="images/image2.png" alt="Пантеон богов" width="400" height="300">
+            </div>
+        </section>
+        <section class="section promo">
+            <div class="promo__content">
+                <h2 class="promo__title section__title">Выставки</h2>
+                <a class="promo__link" href="#" target="_blank">Поиск экскурсий и выставок</a>
+            </div>
+            <ul class="promo__list">
+                <li class="promo__item">
+                    <div class="promo__wrapper">
+                        <h3 class="promo__title">12 подвигов Геракла</h3>
+                        <p class="promo__description"> Мы предлагаем вам погрузиться в героические подвиги знаменитого
+                            Геракла. Своими глазами вы можете увидеть 12 легендарных побед, котороые прославили его на
+                            долгое время.</p>
+                    </div>
+
+                    <img class="promo__icon" src="images/image-1.png" alt="12 подвигов Геракла" width="400"
+                        height="200">
+                </li>
+                <li class="promo__item">
+                    <img class="promo__icon" src="images/image-3.png" alt="Персей" width="400" height="200">
+                    <div class="promo__wrapper">
+                    <h3 class="promo__title">Персей</h3>
+                    <p class="promo__description">Благодаря этой выставке вы можете лично наблюдать смерть великой
+                        Медузы горогоны и возвышение героя-полубога Персея</p>
+                        </div>
+                </li>
+                <li class="promo__item">
+                    <div class="promo__wrapper">
+                    <h3 class="promo__title"> Миф о Тесее и Минотавре</h3>
+                    <p class="promo__description">Попробуйте самостоятельно пройти пугающий лабиринт Кносского дворца и
+                        одолейте Минотавра как это сделал герой мифа этого Тесей</p>
+                    </div>
+                        <img class="promo__icon" src="images/image-4.png" alt="Миф о Тесее и Минотавре" width="400"
+                        height="200">
+                </li>
+                <li class="promo__item">
+                    <img class="promo__icon" src="images/mif41.jpg" alt="Миф об Эросе и Психее" width="400" height="200">
+                    <div class="promo__wrapper">
+                    <h3 class="promo__title">Миф об Эросе и Психее</h3>
+                    <p class="promo__description">Познакомьтесь с историей любви, напоминающей сказку про красавицу и чудовище. Величайшей историей любви, которая прошла множество тяжёлых испытаний на пути к счастью</p>
+                    </div>
+
+                </li>
+            </ul>
+        </section>
+
+        <section class="reviews">
+            <h2 class="reviews__title section__title">
+                Отзывы
+            </h2>
+            <ul class="reviews__list">
+                <li class="reviews__item">
+                    <img class="reviews__icon" src="images/avataraf1.jpg" alt="avatar" width="200" height="200">
+                    <h3 class="reviews__subtitle">Афродита"Богиня Красоты"</h3>
+                    <p class="reviews__text">Да как вы посмели! Я, Великая Афродита Прекрасная, величайшая Богиня Красоты, занимающая ПЕРВОЕ место на Олимпе, и вы, жалкие смертные, смеете так грязно и грубо меня оболгать! Я достойна лучшего места на этом ущербном сайте, а не лживое предание, где меня, Великую Богиню Красоты, выставляют в ужасном свете, только ради какой-то простушки, недостойной моего сына. Отвратительный сайт, отвратительные легенды, надеюсь он сгинет в водах реки Стикс, ибо я не Великая Богиня Красоты. 1 звезда</p>
+                </li>
+                <li class="reviews__item">
+                    <img class="reviews__icon" src="images/avatarz.jpg" alt="avatar" width="150" height="150">
+                    <h3 class="reviews__subtitle">Зевс"Бог Грома и Молний"</h3>
+                    <p class="reviews__text">Χαίρετε мои дорогие подданные, в данный момент, вам пишет Зевс, тот самый Зевс Громовержец-первый и величайший бог среди всего Олимпа. Данный электронный сборник мне любезно посоветовал Гефест, упомянув, что Афродита, богиня красоты, переходит все рамки в написании ответов на легенды в этом электронном сборнике преданий. Так вот, я не понимаю, как посмела Афродита назвать себя первой и величайшей богиней на Олимпе, но это уже дела семейные. Прочитав истории и просмотрев скульптуры, я считаю этот сборник повестей приемлемым и даю разрешение на его существование. Но я недоволен, как смеете вы, простые смертные, не создать выставку о величайшем боге всего Олимпа и его роли в спасении братьев и сестёр от собственного отца. Очень надеюсь, что вы прислушаетесь к ответу на ваши мольбы под названием отзывы и следующую выставку вы посвятите восхвалению великого Зевса Громовержца. 
+                        Ἔρρωσο мои верные подданные.</p>
+                </li>
+                <li class="reviews__item">
+                    <img class="reviews__icon" src="images/avatard.jpg" alt="avatar" width="200" height="200">
+                    <h3 class="reviews__subtitle">Дионис"Бог Виноделия"</h3>
+                    <p class="reviews__text">Всем привет, с вами всеми любимый Дионис бог виноделия я подслушал как Зевс устроил выволочку афродите за её комментарий на каком то сайте и решил глянуть что там. Так вот пока я читал и слушал их я ржал до упаду и понял что это шедевр.Я записал почти всё моменты их криков а также попросил Аполлона создать скульптуру которая очень точно отразит их драку. Как только всё будет завершено я отправлю это вам и очень надеюсь что по этому сделают выставку под названием ,,великий Дионис и дерущиеся боги,,. О они начали заново...ладно я побежал дальше записывать адьес удачи и пока. 
+
+                    Всем советую SkinnyPop от Hershey's отличный попкорн, сладкий и вкусный как раз то что надо под данное представление
+                        
+                    А также вино от моего делового партнёра графини Альсины  Димитреску из Румынии, её вина а особенно ,,Sanguis Virginis,, с лёгким привкусом металла является отличным напитком для расслабления после тяжёлого дня и под захватывающие драки.</p>
+                </li>
+            </ul>
+
+        </section>
+        <!--/ Первый экран -->
+    </main>
+    <footer class="footer container">
+        <img class="footer__icon" src="images/card.png" alt="Карта с адресом" width="400" height="200">
+        <div class="Footer__wrapper">
+        <p class="footer__copy">Сайт создан Осмирко Ксенией,Микаковой Дианой,Россохиной Валерией группа ИТ-21</p>
+        <ul class="footer__list">
+            <li class="footer__item"><a class="footer__item-link" href="#">Контакты:</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Номер телефона +7987654321</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Соц.сети- вк,тг</a></li>
+        </div>
+        </ul>
+    </footer>
+    <section class="section popup">
+        <form action="/">
+            <h3 class="popup__title">Вход в личный кабинет</h3>
+            <input class="popup__field" type="tel" name="phone" placeholder="Номер телефона" required>
+            <input class="popup__field" type="password" name="password" placeholder="Пароль" required>
+            <button class="button">Войти</button>
+        </form>
+    </section>
+
 </html>

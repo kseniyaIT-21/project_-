@@ -15,27 +15,29 @@
      
         justify-content: center;
         color: #000000;
-        font-size: 16px;
+        font-size: 20px;
         text-decoration: none;
+    }
+
+    .header__item-link:hover{
+        opacity: 0.3;
+
     }
     .header__address{
         margin-left: auto;
-        font-size: 16px;
+        font-size: 20px;
+        padding: 10px;
+    }
+    .header__address:hover{
+        opacity: 0.3;
     }
     .header__button{
         display: flex;
         gap: 15px;
         margin-left: auto;
+        padding: 10px;
     }
-    .header__login{
-        border: none;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        gap: 10px;
-        padding: 5px 10px;
-    }
+
     .header__about{
         padding:  15px;
         display: flex;

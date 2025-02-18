@@ -1,9 +1,45 @@
 .about{
     display: flex;
     gap: 10px;
+    justify-content: center;
    }
    .about__wrap-right{
-    width: 500px;
+    max-width: 900px;
     flex-shrink: 0;
    }
+   .promo{
+    padding: 0 50px;
+   }
+
+   .promo__item {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    border: 1px solid #000;
+    margin: 20px 0;
+
+   }
+   .promo__wrapper {
+    max-width: 900px;
+
+   }
+   .section__title{
+    text-align: center;
+   }
+   .promo__link{
+       font-size: 24px;
+       color: #d31212;
+       text-decoration: none;
+       text-align: center;
+   }
+   .reviews__list{
+    list-style: none;
    
+   }   
+   .reviews__icon{
+    padding: 16px;
+    margin: auto;
+    float: left;
+   }
+ 

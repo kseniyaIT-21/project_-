@@ -1,0 +1,8 @@
+.footer__wrapper{
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    list-style-type: none;
+   }
