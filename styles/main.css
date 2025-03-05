@@ -1,17 +1,19 @@
-.about{
+.about {
     display: flex;
     gap: 10px;
     justify-content: center;
-   }
-   .about__wrap-right{
+}
+
+.about__wrap-right {
     max-width: 900px;
     flex-shrink: 0;
-   }
-   .promo{
-    padding: 0 50px;
-   }
+}
 
-   .promo__item {
+.promo {
+    padding: 0 50px;
+}
+
+.promo__item {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -19,27 +21,92 @@
     border: 1px solid #000;
     margin: 20px 0;
 
-   }
-   .promo__wrapper {
-    max-width: 900px;
+}
 
-   }
-   .section__title{
+.promo__wrapper {
+    max-width: 900px;
+    padding-inline: 20px;
+
+}
+
+.section__title {
     text-align: center;
-   }
-   .promo__link{
-       font-size: 24px;
-       color: #d31212;
-       text-decoration: none;
-       text-align: center;
-   }
-   .reviews__list{
+}
+
+.promo__link {
+    font-size: 24px;
+    color: #5e0606;
+    text-decoration: none;
+    text-align: center;
+}
+.promo__link:hover{
+    opacity: 0.3;
+}
+.reviews__list {
     list-style: none;
-   
-   }   
-   .reviews__icon{
+    padding-right: 20px;
+}
+
+.reviews__icon {
     padding: 16px;
     margin: auto;
     float: left;
-   }
- 
+}
+.reviews__score{
+
+    position: relative;
+    height: 17px;
+
+}
+.reviews__score-item {
+    position: absolute;
+    z-index: 2;
+    display: inline-block;
+    background-image: url(../images/score.webp);
+    height: 17px;
+    width: 16px;
+    background-size: 128px;
+    background-position: 0 -136px;
+}
+
+.reviews__score-mask {
+    z-index: 1;
+    width: 85px;
+    background-position: 0 -118px;
+}
+.reviews__score-item--five{
+    width: 86px;
+
+}
+.reviews__score-item--three{
+    width: 50px;
+}
+.popup__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+.promo__item {
+    transition: transform 0.3s;
+}
+.promo__item:hover {
+    transform: scale(1.03);
+}
+.promo__item {
+    transition: box-shadow 0.3s;
+}
+.promo__item:hover {
+    box-shadow: 0 8px 16px 0
+   rgba(0,0,0,0.2);
+}
+.button{
+    padding-right: 25px;
+}
+.popup__form2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+
+}

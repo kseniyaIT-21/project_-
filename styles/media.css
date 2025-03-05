@@ -1,0 +1,15 @@
+@media only screen and (max-width: 1024px) {
+
+    .about{
+        max-width: 100%;
+        flex-wrap: wrap;
+    
+    }
+    .rewiews__list{
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+    .reviews {
+        font-size: 18px;
+    }
+    }
