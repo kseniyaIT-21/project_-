@@ -3,6 +3,10 @@
         justify-content: center;
         align-items: center;
         padding: 10px 40px;
+        position: fixed;
+        margin-top: 0px;
+        left:120px;
+    
     }
     .header__list{
         display: flex;
@@ -48,5 +52,10 @@
         width: 400px;
         flex-shrink: 0;
        }
+       .header--background{
+        background-color: rgb(255, 254, 254);
+       }
+
+  
 
     
