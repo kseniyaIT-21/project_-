@@ -26,11 +26,11 @@
         <span class="header__address"> ул.Пушкина-30</span>
         <!--/ Навигация -->
         <div class="header__button ">
-            <button class="button" type="button">
+            <button class="header__login button" type="button">
                 <img class="header__button-icon" src="images/icon/image.png" alt="Войти" width="16" height="16">
                 <span class="header__button-text">Войти</span>
             </button>
-            <button class="header__login button" type="button">
+            <button class="header__reg button" type="button">
                 <img class="header__button-icon" src="images/icon/image.png" alt="Регистрация" width="16" height="16">
                 <span class="header__button-text">Регистрация</span>
             </button>
@@ -108,7 +108,7 @@
             <ul class="reviews__list">
                 <li class="reviews__item">
                     <img class="reviews__icon" src="images/avataraf1.jpg" alt="avatar" width="200" height="200">
-                    <h3 class="reviews__subtitle">Афродита"Богиня Красоты"</h3>
+                    <h3 class="reviews__subtitle">Заголовок1</h3>
                     <div class="reviews__score">
                         <span class="reviews__score-item"></span>
                         <span class="reviews__score-item  reviews__score-mask"></span>
@@ -122,7 +122,7 @@
                 </li>
                 <li class="reviews__item">
                     <img class="reviews__icon" src="images/avatarz.jpg" alt="avatar" width="150" height="150">
-                    <h3 class="reviews__subtitle">Зевс"Бог Грома и Молний"</h3>
+                    <h3 class="reviews__subtitle">Заголовок2</h3>
                     <div class="reviews__score">
                         <span class="reviews__score-item reviews__score-item--three">
                         </span>
@@ -143,7 +143,7 @@
                 </li>
                 <li class="reviews__item">
                     <img class="reviews__icon" src="images/avatard.jpg" alt="avatar" width="200" height="200">
-                    <h3 class="reviews__subtitle">Дионис"Бог Виноделия"</h3>
+                    <h3 class="reviews__subtitle">Заголовок3</h3>
                     <div class="reviews__score">
                         <span class="reviews__score-item reviews__score-item--five">
                         </span>
@@ -181,22 +181,28 @@
         </div>
         </ul>
     </footer>
-    <section class="section popup" hidden>
-        <form class="popup__form" action="/">
-            <h3 class="popup__title">Вход в личный кабинет</h3>
-            <input class="popup__field" type="tel" name="phone" placeholder="Номер телефона" required>
-            <input class="popup__field" type="password" name="password" placeholder="Пароль" required>
-            <button class="button">Войти</button>
-        </form>
-    </section>
-    <section class="section popup" hidden>
-        <form class="popup__form" action="/">
-            <h3 class="popup__title">Регистрация </h3>
-            <input class="popup__field" type="name" name="data" placeholder="Логин" required>
-            <input class="popup__field" type="adress" name="mail" placeholder="Адрес Эл.Почты" required>
-            <input class="popup__field" type="password" name="password" placeholder="Пароль" required>
-            <button class="button">Регистрация</button>
-        </form>
-    </section>
+    <div class="window" hidden>
+        <section class="section popup popup__login">
+            <button class="popup__end" type="button">Закрыть</button>
+            <form class="popup__form" action="/">
+                <h3 class="popup__title">Вход в личный кабинет</h3>
+                <input class="popup__field" type="tel" name="phone" placeholder="Номер телефона" required>
+                <input class="popup__field" type="password" name="password" placeholder="Пароль" required>
+                <button class="button">Войти</button>
+            </form>
+        </section>
+    </div> 
+    <div class="dialog" hidden>
+        <section class="section popup popup__reg">
+            <button class="popup__close" type="button">Закрыть</button>
+            <form class="popup__form" action="/">
+                <h3 class="popup__title">Регистрация </h3>
+                <input class="popup__field" type="name" name="data" placeholder="Логин" required>
+                <input class="popup__field" type="adress" name="mail" placeholder="Адрес Эл.Почты" required>
+                <input class="popup__field" type="password" name="password" placeholder="Пароль" required>
+                <button class="button">Регистрация</button>
+            </form>
+        </section>
+   </div>
     <script src="scripts/script.js"></script>
 </html>
