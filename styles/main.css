@@ -139,3 +139,16 @@
 .popup__close:hover,.popup__end:hover {
     opacity: 0.3;
 }
+.modal__content, .modal__hews{
+    display: flex;
+}
+.modal__hews{
+    width: 1000px;
+    border: 1px solid #000;
+    display: none;
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f3f3f3; 
+}

@@ -90,7 +90,54 @@ document.addEventListener("DOMContentLoaded", () => {
            });
     }
 
+// 3.4.появление модальных форм при клике на карточку
+const promo= document.querySelectorAll(".promo__item");
+const modalNews = document.querySelectorAll (".modal__hews");
+promo.forEach((item,index)=>{
+    item.addEventListener("click", ()=>{
+        modalNews[index].style.display="block";
+        console.log("кнопка нажата");
+    });
+    const modalClose= document.querySelector(".modal__close");
+    modalClose.addEventListener("click", () => {
+        modalNews.style.display="none";
+        });
+});
+//3.5
+const headerMenu = document.querySelector('.header__menu');
+if (headerMenu){
+    const headerList = headerMenu.querySelector('.header__list');
+    const menuData = {
+        link1: {
+            link: '#',
+            title: 'Главная',
+        },
+        link2: {
+            link: '#',
+            title: 'Выставки',
+        },
+        link3: {
+            link: '#',
+            title: 'Билеты',
+        },
+        link4: {
+            link: '#',
+            title: 'Адрес',
+        },
+    }
+    const createLink = (UrlLink, title) =>{
+        const link = `
+        <li class="header__item"><a href="${UrlLink}" class="header__item-link">${title}</a></li>
+        `;
+        return link;
+    }
+    for (const linkItem in menuData) {
+        const link = menuData[linkItem];
+        const linkIndex = createLink(link.UrlLink, link.title);
+        headerList.insertAdjacentHTML('beforeend', linkIndex);
 
+    }
+}
 
 
 });
