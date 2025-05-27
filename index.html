@@ -11,6 +11,16 @@
 <!-- Заголовок -->
 
 <body>
+    <div class="preloader">
+        <div class="loader">
+            <span class="dot1"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+        </div>
+        Загрузка...
+    </div>
+    <div class="content">
+
     <header class="header container">
         <a class="header__link">
             <h1 class="header__title">Музей мифов древней греции</h1>
@@ -68,7 +78,7 @@
 
                     <img class="promo__icon" src="images/image-1.png" alt="12 подвигов Геракла" width="400"
                         height="200">
-                      
+
                 </li>
                 <li class="promo__item">
                     <img class="promo__icon" src="images/image-3.png" alt="Персей" width="400" height="200">
@@ -109,7 +119,7 @@
                 Отзывы
             </h2>
             <ul class="reviews__list">
-                <li class="reviews__item">
+                <!-- <li class="reviews__item">
                     <img class="reviews__icon" src="images/avataraf1.jpg" alt="avatar" width="200" height="200">
                     <h3 class="reviews__subtitle">Заголовок1</h3>
                     <div class="reviews__score">
@@ -168,7 +178,7 @@
                         А также вино от моего делового партнёра графини Альсины Димитреску из Румынии, её вина а
                         особенно ,,Sanguis Virginis,, с лёгким привкусом металла является отличным напитком для
                         расслабления после тяжёлого дня и под захватывающие драки.</p>
-                </li>
+                </li> -->
             </ul>
 
         </section>
@@ -188,7 +198,6 @@
     <div class="modal">
         <div class="modal__hews" hidden>
             <button class="modal__close" type="button">X</button>
-
             <div class="modal__content">
                 <img class="modal__icon" src="images/12heracles.jpg" alt="12 подвигов" height="300" width="400">
                 <div class="modal__wrap">
@@ -213,6 +222,7 @@
 
         </div>
         <div class="modal__hews" hidden>
+            <button class="modal__close" type="button">X</button>
             <div class="modal__wrap">
                 <h2 class="modal__title"> История Медузы горгоны </h2>
                 ГОРГО́НЫ (Γορ­γώ, Γορ­γών), в гре­че­ской мифо­ло­гии чудо­вищ­ные порож­де­ния мор­ских божеств Фор­кия
@@ -231,6 +241,7 @@
             <img src="images/meduzahorohona.png" alt="История Медузы">
         </div>
         <div class="modal__hews" hidden>
+            <button class="modal__close" type="button">X</button>
             <div class="modal__wrap">
                 <h2 class="modal__title"> История минотавра </h2>
                 Король Минос на Крите попросил белого быка из Посейдона показать свою поддержку его поискам, чтобы
@@ -299,6 +310,7 @@
             </form>
         </section>
     </div>
+</div>
     <script src="scripts/script.js"></script>
 
 </html>

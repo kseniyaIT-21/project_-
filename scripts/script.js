@@ -98,11 +98,13 @@ promo.forEach((item,index)=>{
         modalNews[index].style.display="block";
         console.log("кнопка нажата");
     });
+
+
+});
     const modalClose= document.querySelector(".modal__close");
     modalClose.addEventListener("click", () => {
         modalNews.style.display="none";
         });
-});
 //3.5
 const headerMenu = document.querySelector('.header__menu');
 if (headerMenu){
@@ -138,6 +140,76 @@ if (headerMenu){
 
     }
 }
+const cardsCon = document.querySelector(".reviews");
+    if (cardsCon) {
+        const cardList = cardsCon.querySelector(".reviews__list");
+ 
+        // Пример URL для получения данных с сервера
+        const apiUrl = "data.json";
 
+         // Функция для создания карточки
+        const createCard = (
+            image,
+            imageAlt,
+            imageWidth,
+            imageHeight,
+            subtitle,
+            description
+        ) => {
+            // Шаблонные строки и подстановки
+            const card = `
+                <li class="reviews__item">
+                      <img class="reviews__icon" src="${image}" alt="${imageAlt}" width="${imageWidth}" height="${imageHeight}">
+                    <h3 class="reviews__subtitle">${subtitle}</h3>                    
+                    <div class="reviews__score">
+                       <span class="reviews__score-item  reviews__score-mask"></span>
+                        <span class="reviews__score-item reviews__score-item--three">
+                        </span>
+                    
+                    </div>
+                    <p class="reviews__text">${description}</p>
+                </li>
+            `;            
+            return card; 
+        };
+              // Загрузка данных с сервера
+        fetch(apiUrl)
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data); // Данные
+            console.log(typeof data); // Тип полученных данных
 
+            data.forEach((item) => {
+                const cardElement = createCard(
+                    item.image,
+                    item.imageAlt,
+                    item.imageWidth,
+                    item.imageHeight,
+                    item.subtitle,
+                    item.description
+                );
+                cardList.insertAdjacentHTML("beforeend", cardElement);
+            });
+        })
+        .catch((error) => {
+            console.error("Ошибка при загрузке данных:", error);
+        });
+
+        const preloader = document.querySelector(".preloader");
+        const content = document.querySelector(".content");
+        if (preloader && content) {
+            setTimeout(() => {
+                // Скрываем прелоадер
+                preloader.style.opacity = "0";
+                preloader.style.visibility = "hidden";
+    
+                // Показываем контент
+                content.style.display = "block";
+    
+                // Удаляем элемент из DOM
+                preloader.remove();
+            }, 1000); // Задержка 3 секунды
+        }
+    
+    };
 });

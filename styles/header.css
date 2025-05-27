@@ -4,7 +4,7 @@
         align-items: center;
         padding: 10px 40px;
         position: fixed;
-        margin-top: 0px;
+        margin-top:-200px;
         left:50%;
         transform: translateX(-50%);
         width: 100%;
