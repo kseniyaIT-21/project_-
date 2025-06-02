@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Музей мифов древней греции</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -37,11 +38,11 @@
         <!--/ Навигация -->
         <div class="header__button ">
             <button class="header__login button" type="button">
-                <img class="header__button-icon" src="images/icon/image.png" alt="Войти" width="16" height="16">
+                <img class="header__button-icon" src="images/image.png" alt="Войти" width="16" height="16">
                 <span class="header__button-text">Войти</span>
             </button>
             <button class="header__reg button" type="button">
-                <img class="header__button-icon" src="images/icon/image.png" alt="Регистрация" width="16" height="16">
+                <img class="header__button-icon" src="images/image.png" alt="Регистрация" width="16" height="16">
                 <span class="header__button-text">Регистрация</span>
             </button>
         </div>
@@ -111,6 +112,24 @@
 
                 </li>
             </ul>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="images/sl1.jpg" alt="Фрикс и Гелла" class="swiper-slide-image" width="100">
+                </div>
+                  <div class="swiper-slide">
+                    <img src="images/sl2.jpg" alt="Орфей и Эвридика" class="swiper-slide-image" width="100">
+                </div>
+                  <div class="swiper-slide">
+                    <img src="images/sl3.jpg" alt="Аполлон и Дафна" class="swiper-slide-image" width="100">
+                </div>
+                  <div class="swiper-slide">
+                    <img src="images/sl4.jpg" alt="Миф о Медее" class="swiper-slide-image" width="100">
+                </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
         </section>
 
 
@@ -312,5 +331,6 @@
     </div>
 </div>
     <script src="scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </html>

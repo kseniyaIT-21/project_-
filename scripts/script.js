@@ -209,7 +209,12 @@ const cardsCon = document.querySelector(".reviews");
                 // Удаляем элемент из DOM
                 preloader.remove();
             }, 1000); // Задержка 3 секунды
-        }
-    
+        }    
     };
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
 });
